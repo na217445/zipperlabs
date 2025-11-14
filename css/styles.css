@@ -1,20 +1,26 @@
-
+/* ==========================================
+   CSS RESET & BASE STYLES
+   ========================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ==========================================
+   CSS VARIABLES
+   ========================================== */
 :root {
-    /* Colors */
+    /* Colors - Black & Pale Gold Theme */
     --primary-color: #000000;          /* Pure black */
     --secondary-color: #1a1a1a;        /* Slightly lighter black */
-    --accent-color: #ffd700;           /* Bright yellow/gold */
-    --accent-dark: #ccaa00;            /*
-    --text-dark: #1a1a1a;              
-    --text-light: #ffffff;             
-    --bg-light: #f9f9f9;               
-    --bg-dark: #0a0a0a; 
+    --accent-color: #e6d4a3;           /* Pale gold/champagne */
+    --accent-dark: #d4c190;            /* Slightly darker pale gold for hover */
+    --accent-light: #f2ebdb;           /* Very light gold for backgrounds */
+    --text-dark: #1a1a1a;              /* Dark text for light backgrounds */
+    --text-light: #ffffff;             /* White text */
+    --bg-light: #f9f9f9;               /* Off-white background */
+    --bg-dark: #0a0a0a;                /* Very dark black */
     
     /* Spacing */
     --spacing-sm: 1rem;
@@ -84,7 +90,8 @@ a {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(230, 212, 163, 0.2);
+    border-bottom: 3px solid var(--accent-color);
 }
 
 .nav-container {
@@ -99,12 +106,12 @@ a {
 .logo a {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--text-light);
+    color: var(--accent-color);
     letter-spacing: 1px;
 }
 
 .logo a:hover {
-    color: var(--accent-color);
+    color: var(--text-light);
 }
 
 .nav-menu {
@@ -121,12 +128,13 @@ a {
 }
 
 .nav-menu li a:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 .nav-menu li a.active {
     background-color: var(--accent-color);
-    color: var(--text-dark);
+    color: var(--primary-color);
 }
 
 /* ==========================================
@@ -141,6 +149,17 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: var(--accent-color);
 }
 
 .hero-content {
@@ -156,25 +175,25 @@ a {
 .hero p {
     font-size: 1.3rem;
     margin-bottom: 2rem;
-    opacity: 0.9;
+    color: var(--accent-color);
 }
 
 .btn-primary {
     display: inline-block;
     background-color: var(--accent-color);
-    color: var(--text-dark);
+    color: var(--primary-color);
     padding: 1rem 2.5rem;
     font-size: 1.1rem;
     font-weight: bold;
     border-radius: 50px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(230, 212, 163, 0.3);
 }
 
 .btn-primary:hover {
-    background-color: var(--text-light);
+    background-color: var(--accent-dark);
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(230, 212, 163, 0.5);
 }
 
 /* ==========================================
@@ -192,12 +211,25 @@ main {
 .intro h2 {
     color: var(--primary-color);
     margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.intro h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 3px;
+    background-color: var(--accent-color);
 }
 
 .intro p {
     font-size: 1.2rem;
     max-width: 700px;
-    margin: 0 auto;
+    margin: 2rem auto 0;
     color: #555;
 }
 
@@ -210,6 +242,7 @@ footer {
     padding: 3rem 2rem 2rem;
     text-align: center;
     margin-top: 4rem;
+    border-top: 3px solid var(--accent-color);
 }
 
 footer p {
@@ -218,8 +251,9 @@ footer p {
 
 .disclaimer {
     font-size: 0.9rem;
-    opacity: 0.7;
+    opacity: 0.8;
     margin-top: 1rem;
+    color: var(--accent-color);
 }
 
 /* ==========================================
