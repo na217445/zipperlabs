@@ -1,40 +1,33 @@
-/* ==========================================
-   CSS RESET & BASE STYLES
-   ========================================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ==========================================
-   CSS VARIABLES
-   ========================================== */
+
 :root {
-    /* Colors - Black & Rich Gold Theme */
-    --primary-color: #000000;          /* Pure black */
-    --secondary-color: #1a1a1a;        /* Slightly lighter black */
-    --accent-color: #d4af37;           /* Rich gold */
-    --accent-dark: #b8941f;            /* Darker gold for hover */
-    --accent-light: #e6c863;           /* Lighter gold for highlights */
-    --text-dark: #1a1a1a;              /* Dark text for light backgrounds */
-    --text-light: #ffffff;             /* White text */
-    --bg-light: #f9f9f9;               /* Off-white background */
-    --bg-dark: #0a0a0a;                /* Very dark black */
     
-    /* Spacing */
+    --primary-color: #000000;          
+    --secondary-color: #1a1a1a;        
+    --accent-color: #d4af37;           
+    --accent-dark: #b8941f;            
+    --accent-light: #e6c863;           
+    --text-dark: #1a1a1a;              
+    --text-light: #ffffff;             
+    --bg-light: #f9f9f9;               
+    --bg-dark: #0a0a0a;                
+    
+    
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 4rem;
     
-    /* Typography */
+    
     --font-main: Arial, Helvetica, sans-serif;
     --font-heading: Georgia, serif;
 }
 
-/* ==========================================
-   BASE TYPOGRAPHY
-   ========================================== */
 body {
     font-family: var(--font-main);
     font-size: 16px;
@@ -72,18 +65,13 @@ a {
     transition: all 0.3s ease;
 }
 
-/* ==========================================
-   CONTAINER & LAYOUT UTILITIES
-   ========================================== */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-/* ==========================================
-   NAVIGATION BAR
-   ========================================== */
+
 .navbar {
     background-color: var(--primary-color);
     padding: 1rem 0;
@@ -137,9 +125,6 @@ a {
     color: var(--primary-color);
 }
 
-/* ==========================================
-   HERO SECTION
-   ========================================== */
 .hero {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: var(--text-light);
@@ -196,9 +181,6 @@ a {
     box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
 }
 
-/* ==========================================
-   MAIN CONTENT SECTIONS
-   ========================================== */
 main {
     background-color: white;
 }
@@ -233,9 +215,6 @@ main {
     color: #555;
 }
 
-/* ==========================================
-   FOOTER
-   ========================================== */
 footer {
     background-color: var(--bg-dark);
     color: var(--text-light);
@@ -256,9 +235,7 @@ footer p {
     color: var(--accent-color);
 }
 
-/* ==========================================
-   RESPONSIVE DESIGN - TABLETS
-   ========================================== */
+
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
@@ -293,9 +270,7 @@ footer p {
     }
 }
 
-/* ==========================================
-   RESPONSIVE DESIGN - MOBILE
-   ========================================== */
+
 @media screen and (max-width: 480px) {
     h1 {
         font-size: 2rem;
