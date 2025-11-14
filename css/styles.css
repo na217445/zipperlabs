@@ -11,12 +11,12 @@
    CSS VARIABLES
    ========================================== */
 :root {
-    /* Colors - Black & Pale Gold Theme */
+    /* Colors - Black & Rich Gold Theme */
     --primary-color: #000000;          /* Pure black */
     --secondary-color: #1a1a1a;        /* Slightly lighter black */
-    --accent-color: #e6d4a3;           /* Pale gold/champagne */
-    --accent-dark: #d4c190;            /* Slightly darker pale gold for hover */
-    --accent-light: #f2ebdb;           /* Very light gold for backgrounds */
+    --accent-color: #d4af37;           /* Rich gold */
+    --accent-dark: #b8941f;            /* Darker gold for hover */
+    --accent-light: #e6c863;           /* Lighter gold for highlights */
     --text-dark: #1a1a1a;              /* Dark text for light backgrounds */
     --text-light: #ffffff;             /* White text */
     --bg-light: #f9f9f9;               /* Off-white background */
@@ -90,7 +90,7 @@ a {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(230, 212, 163, 0.2);
+    box-shadow: 0 2px 5px rgba(212, 175, 55, 0.2);
     border-bottom: 3px solid var(--accent-color);
 }
 
@@ -187,13 +187,13 @@ a {
     font-weight: bold;
     border-radius: 50px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(230, 212, 163, 0.3);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
 }
 
 .btn-primary:hover {
     background-color: var(--accent-dark);
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(230, 212, 163, 0.5);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
 }
 
 /* ==========================================
