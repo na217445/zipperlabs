@@ -1,17 +1,13 @@
-/* ==========================================
-   CSS RESET & BASE STYLES
-   ========================================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ==========================================
-   CSS VARIABLES
-   ========================================== */
+
 :root {
-    /* Colors - Black & Rich Gold Theme */
+    
     --primary-color: #000000;          /* Pure black */
     --secondary-color: #1a1a1a;        /* Slightly lighter black */
     --accent-color: #d4af37;           /* Rich gold */
@@ -22,19 +18,17 @@
     --bg-light: #f9f9f9;               /* Off-white background */
     --bg-dark: #0a0a0a;                /* Very dark black */
     
-    /* Spacing */
+    
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 4rem;
     
-    /* Typography */
+    
     --font-main: Arial, Helvetica, sans-serif;
     --font-heading: Georgia, serif;
 }
 
-/* ==========================================
-   BASE TYPOGRAPHY
-   ========================================== */
+
 body {
     font-family: var(--font-main);
     font-size: 16px;
@@ -72,18 +66,13 @@ a {
     transition: all 0.3s ease;
 }
 
-/* ==========================================
-   CONTAINER & LAYOUT UTILITIES
-   ========================================== */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-/* ==========================================
-   NAVIGATION BAR
-   ========================================== */
 .navbar {
     background-color: var(--primary-color);
     padding: 1rem 0;
@@ -137,9 +126,7 @@ a {
     color: var(--primary-color);
 }
 
-/* ==========================================
-   HERO SECTION (Homepage only)
-   ========================================== */
+
 .hero {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: var(--text-light);
@@ -198,9 +185,7 @@ a {
     box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
 }
 
-/* ==========================================
-   PAGE HEADER (for all non-homepage pages)
-   ========================================== */
+
 .page-header {
     background-color: var(--primary-color);
     color: var(--text-light);
@@ -221,9 +206,6 @@ a {
     opacity: 0.9;
 }
 
-/* ==========================================
-   MAIN CONTENT SECTIONS
-   ========================================== */
 main {
     background-color: white;
 }
@@ -258,9 +240,7 @@ main {
     color: #555;
 }
 
-/* ==========================================
-   ABOUT PAGE SECTIONS
-   ========================================== */
+
 .about-section,
 .commitment-section {
     padding: var(--spacing-lg) 2rem;
@@ -302,7 +282,7 @@ main {
     margin-right: auto;
 }
 
-/* Mission Section with Values Grid */
+
 .mission-section {
     padding: var(--spacing-lg) 2rem;
     background-color: var(--bg-light);
@@ -349,9 +329,7 @@ main {
     line-height: 1.6;
 }
 
-/* ==========================================
-   CONTACT PAGE STYLES
-   ========================================== */
+
 .contact-section {
     padding: var(--spacing-lg) 2rem;
     background-color: white;
@@ -371,7 +349,7 @@ main {
     margin-bottom: 2rem;
 }
 
-/* Form Styles */
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -409,7 +387,7 @@ main {
     resize: vertical;
 }
 
-/* Contact Info Styles */
+
 .info-item {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
@@ -440,9 +418,7 @@ main {
     color: var(--accent-color);
 }
 
-/* ==========================================
-   FAQ PAGE STYLES
-   ========================================== */
+
 .faq-section {
     padding: var(--spacing-lg) 2rem;
     background-color: white;
@@ -497,9 +473,7 @@ main {
     margin-bottom: 2rem;
 }
 
-/* ==========================================
-   PRIVACY PAGE STYLES
-   ========================================== */
+
 .privacy-section {
     padding: var(--spacing-lg) 2rem;
     background-color: white;
@@ -577,9 +551,7 @@ main {
     margin: 0;
 }
 
-/* ==========================================
-   FOOTER
-   ========================================== */
+
 footer {
     background-color: var(--bg-dark);
     color: var(--text-light);
@@ -600,9 +572,7 @@ footer p {
     color: var(--accent-color);
 }
 
-/* ==========================================
-   RESPONSIVE DESIGN - TABLETS
-   ========================================== */
+
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
@@ -663,9 +633,7 @@ footer p {
     }
 }
 
-/* ==========================================
-   RESPONSIVE DESIGN - MOBILE
-   ========================================== */
+
 @media screen and (max-width: 480px) {
     h1 {
         font-size: 2rem;
