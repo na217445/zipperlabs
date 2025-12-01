@@ -685,4 +685,124 @@ footer p {
     .privacy-section {
         padding: 2rem 1rem;
     }
+    /* ==========================================
+   TERMS AND CONDITIONS PAGE STYLES
+   ========================================== */
+.terms-section {
+    padding: var(--spacing-lg) 2rem;
+    background-color: white;
+}
+
+.terms-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.last-updated {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.terms-intro {
+    background-color: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--accent-color);
+}
+
+/* Decorative divider between sections */
+.terms-divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--accent-color), transparent);
+    margin: 2.5rem 0;
+    opacity: 0.5;
+}
+
+.terms-content h2 {
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.terms-content h3 {
+    color: var(--text-dark);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.terms-content p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.terms-content ul {
+    margin: 1rem 0 1.5rem 2rem;
+    color: #555;
+}
+
+.terms-content li {
+    margin-bottom: 0.8rem;
+    line-height: 1.7;
+    position: relative;
+}
+
+.terms-content li::marker {
+    color: var(--accent-color);
+}
+
+.terms-content a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.terms-content a:hover {
+    color: var(--accent-dark);
+    text-decoration: underline;
+}
+
+.contact-details {
+    background-color: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    border-left: 4px solid var(--accent-color);
+}
+
+.contact-details p {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+
+.contact-details a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.contact-details a:hover {
+    color: var(--accent-color);
+}
+
+/* Responsive adjustments for Terms page */
+@media screen and (max-width: 768px) {
+    .terms-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .terms-content ul {
+        margin-left: 1.5rem;
+    }
+    
+    .terms-divider {
+        margin: 2rem 0;
+    }
+}
 }
